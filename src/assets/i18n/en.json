@@ -1,0 +1,13 @@
+{
+    "HOME": {
+      "TITLE": "Hello Angular Flask example!",
+      "DIALOG_BUTTON": "Open Dialog",
+      "DIALOG": {
+          "TITLE": "Welcome!",
+          "TEXT": "Hello Angular Flask example!"
+      }
+    },
+    "DIALOG_ACTIONS": {
+        "OK": "Ok"
+    }
+}

@@ -1,0 +1,14 @@
+/* ==============================
+   BASE STYLES
+   ============================== */
+
+   @import 'global';
+   @import 'theming';
+   @import 'typography';
+
+   $typo-config: mat-typography-config();
+
+    html, body {
+        color: mat-contrast($pr-pallete, 500);
+        font-family: mat-font-family($typo-config);
+    }

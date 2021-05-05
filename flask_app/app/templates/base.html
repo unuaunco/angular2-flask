@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>{{ title }} | Flask-Angular App</title>
+    <link href="{{ url_for('static', filename='ang/styles.css') }}" rel="stylesheet">
+</head>
+<body class="mat-typography">
+    <app-root></app-root>
+    {% block body %}
+    {% endblock %}
+    <script src="{{ url_for('static', filename='ang/vendor.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='ang/polyfills.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='ang/main.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='ang/runtime.js') }}" defer></script>
+</body>
+</html>

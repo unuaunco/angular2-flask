@@ -1,0 +1,27 @@
+/* ========================
+MIXINS
+=========================*/
+
+@mixin gradient($from, $to) {
+    /* fallback/image non-cover color */
+    background-color: $from;
+
+    background: linear-gradient(90deg, $from 0%, $to 100%) no-repeat center center fixed;
+  
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient($from, $to);
+  
+    /* Safari 4+, Chrome 1+ */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+  
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient($from, $to);
+  
+    /* Opera 11.10+ */
+    background: -o-linear-gradient($from, $to);
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
